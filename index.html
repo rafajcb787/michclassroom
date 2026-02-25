@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mrs. Micheline Classroom</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div>
+        <p class="tag">Mrs. Micheline Classroom</p>
+        <h1>A simple digital classroom for students and families</h1>
+        <p>
+          Start sharing assignments, planning with a calendar, messaging families,
+          and onboarding students with individual dashboards.
+        </p>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#teacher-tools">Teacher Tools</a>
+        <a href="#register">Register</a>
+        <a href="#dashboard">Student Dashboard</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="features" class="section">
+        <h2>Core features to launch now</h2>
+        <div class="grid three">
+          <article class="card">
+            <h3>Assignment Uploads</h3>
+            <p>
+              Mrs. Micheline can post work files and students can see everything in
+              one place.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Class Calendar</h3>
+            <p>
+              Add important due dates, classroom events, and after-school reminders.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Parent & Student Messaging</h3>
+            <p>
+              Keep communication simple with direct messages for updates and support.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="teacher-tools" class="section alt">
+        <h2>Teacher tools (demo)</h2>
+        <div class="grid two">
+          <article class="card">
+            <h3>Post new classwork</h3>
+            <form id="upload-form">
+              <label>
+                Work title
+                <input type="text" id="work-title" required placeholder="Fractions worksheet" />
+              </label>
+              <label>
+                Notes
+                <textarea id="work-notes" rows="3" placeholder="Instructions for students"></textarea>
+              </label>
+              <button type="submit">Publish Work</button>
+            </form>
+          </article>
+
+          <article class="card">
+            <h3>Add calendar event</h3>
+            <form id="calendar-form">
+              <label>
+                Event name
+                <input type="text" id="event-title" required placeholder="Quiz Day" />
+              </label>
+              <label>
+                Date
+                <input type="date" id="event-date" required />
+              </label>
+              <button type="submit">Add Event</button>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <section id="messaging" class="section">
+        <h2>Messaging</h2>
+        <div class="card">
+          <form id="message-form">
+            <label>
+              Send update to
+              <input type="text" id="message-to" required placeholder="Parent Group A" />
+            </label>
+            <label>
+              Message
+              <textarea id="message-body" rows="4" required placeholder="Tomorrow we review chapter 2..."></textarea>
+            </label>
+            <button type="submit">Send Message</button>
+          </form>
+          <p id="message-status" class="status"></p>
+        </div>
+      </section>
+
+      <section id="register" class="section alt">
+        <h2>User registration</h2>
+        <div class="card">
+          <form id="register-form">
+            <label>
+              Full name
+              <input type="text" id="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" id="email" required />
+            </label>
+            <label>
+              Role
+              <select id="role" required>
+                <option value="">Choose role</option>
+                <option value="Student">Student</option>
+                <option value="Parent">Parent</option>
+              </select>
+            </label>
+            <button type="submit">Create Account</button>
+          </form>
+          <p id="register-status" class="status"></p>
+        </div>
+      </section>
+
+      <section id="dashboard" class="section">
+        <h2>Student dashboard preview</h2>
+        <div class="grid two">
+          <article class="card">
+            <h3>Published Work</h3>
+            <ul id="work-list"></ul>
+          </article>
+          <article class="card">
+            <h3>Calendar</h3>
+            <ul id="event-list"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="future" class="section alt">
+        <h2>Future paid program concept</h2>
+        <div class="card">
+          <p>
+            Later, this can expand into a paid after-school service where families
+            upload material from their children, and Mrs. Micheline creates
+            personalized reinforcement plans.
+          </p>
+          <ul>
+            <li>Personalized study plans based on student materials</li>
+            <li>Private family dashboards</li>
+            <li>Subscription billing and access control</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built for Mrs. Micheline • Classroom MVP</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
